@@ -6,8 +6,9 @@ With this caht you can:
 
 - Send chats.
 - Receive chats.
+- Send Payments
 
-There is also a back-end repository that will be updated soon.
+During the backend there have been some improvements, like the implementation of Stripe on it. 
 
 ## Available Scripts
 
@@ -17,6 +18,8 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+IMPORTANT: So far you have to create as well the port 3001 to check if the system is working.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
