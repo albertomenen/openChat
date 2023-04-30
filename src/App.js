@@ -1,18 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import StripePayment from './StripePayment'; // Asegúrate de que la ruta sea la correcta según la ubicación de tu archivo
+import StripePayment from '../src/components/StripePayment'; 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+
+
 
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <div>
-      {/* ... */}
-      <StripePayment />
-      {/* ... */}
-    </div>
-    </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/payment" component={StripePayment} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
